@@ -20,7 +20,7 @@ function App() {
         >
           Learn React
         </a>
-        <h1>Name: {fname}</h1>
+        <h1>Name: {fname}</h1> {/*inside {} we can use javascript and comment like this*/}
         <p>Age: {age}</p>
       </header>
     </div>
