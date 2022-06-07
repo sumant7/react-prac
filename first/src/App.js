@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const o = {
+    name: "Sumant Chaudhary",
+    age: 19,
+  }
     const fname = "Sumant Chaudhary"  //if we don't use const here it doesn't compile don't know why
     const age = 19 
     const p = "Enter Data"
@@ -25,10 +29,11 @@ function App() {
         >
           Learn React
         </a>
-        <h1>Name: {fname}</h1> {/*inside {} we can use javascript and comment like this*/}
+        <h1>Name: {fname}</h1> {/*inside {} we can use javascript things which return stuff like map,ternery opertor, variables but not if else for loops etc and comment like this*/}
         <p>Age: {age}</p>
         <p>Country: {country()}</p>
         {box}
+        {o.name}
       </header>
     </div>
   );
