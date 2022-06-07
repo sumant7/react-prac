@@ -4,7 +4,10 @@ import './App.css';
 function App() {
     const fname = "Sumant Chaudhary"  //if we don't use const here it doesn't compile don't know why
     const age = 19 
-  //inside the return e have JSX which lookd like HTML
+  //inside the return we have JSX which lookd like HTML
+  const country = ()=>{
+    return "India"
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -22,6 +25,7 @@ function App() {
         </a>
         <h1>Name: {fname}</h1> {/*inside {} we can use javascript and comment like this*/}
         <p>Age: {age}</p>
+        <p>Country: {country()}</p>
       </header>
     </div>
   );
