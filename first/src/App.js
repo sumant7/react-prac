@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    const fname = "Sumant Chaudhary"  //if we don't use const here it doesn't compile don't know why
+    const age = 19 
+  //inside the return e have JSX which lookd like HTML
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,8 @@ function App() {
         >
           Learn React
         </a>
+        <h1>Name: {fname}</h1>
+        <p>Age: {age}</p>
       </header>
     </div>
   );
