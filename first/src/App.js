@@ -9,6 +9,7 @@ function App() {
   const country = ()=>{
     return "India"
   }
+  const box = <input placeholder={p} autoComplete></input>
   return (
     <div className="App">
       <header className="App-header">
@@ -27,7 +28,7 @@ function App() {
         <h1>Name: {fname}</h1> {/*inside {} we can use javascript and comment like this*/}
         <p>Age: {age}</p>
         <p>Country: {country()}</p>
-        <input placeholder={p}></input>
+        {box}
       </header>
     </div>
   );
