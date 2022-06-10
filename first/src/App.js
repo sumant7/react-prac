@@ -1,6 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+//we don't need to write the JSX, we can write the Js code also like React.createlement etc because while compiling JSX gets converted to Js only (see /babeljs.io) but JSX is simpler
+
+//note there should always be 1 and only 1 root element which contains everything, here its <div className="App"> 
+
+//we can also create custom components
+
 function App() {
   const o = {
     name: "Sumant Chaudhary",
