@@ -21,6 +21,10 @@ function App() {
     return "India"
   }
   const box = <input placeholder={p} autoComplete></input>
+  const style={
+    color: 'grey',
+    margin: '10px'
+  }
   return (
     <div className="App">
         <h1 style={  //text-decocation becomes textDecoratino in JSX because no - in object
@@ -29,8 +33,8 @@ function App() {
             boxShadow: '0 2px 5px #ccc'
           }
         }>Name: {fname}</h1> {/*inside {} we can use javascript things which return stuff like map,ternery opertor, variables but not if else for loops etc and comment like this*/}
-        <p classname="age">Age: {age}</p>
-        <p>Country: {country()}</p>
+        <p classname="age" style={style}>Age: {age}</p>
+        <p style={style}>Country: {country()}</p>
         {box}
         <div>{o.name}</div> 
     </div>
