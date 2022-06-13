@@ -28,21 +28,24 @@ function App() {
 
   const blog =[
     {
+      id: 1,
       title: 'One',
       description: 'Hello guys welcome to my blog'
     },
     {
+      id: 2,
       title: 'Two',
       description: 'Hello guys welcome to my blog'
     },
     {
+      id: 3,
       title: 'Three',
       description: 'Hello guys welcome to my blog'
     }
   ]
   const bm = blog.map((item,pos)=>{
     return(
-      <div className='card' key={pos}>
+      <div className='card' key={item.id}>
       <h3>{item.title}</h3>
       <p>{item.description}</p>
     </div>
