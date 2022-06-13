@@ -23,25 +23,16 @@ function App() {
   const box = <input placeholder={p} autoComplete></input>
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>Name: {fname}</h1> {/*inside {} we can use javascript things which return stuff like map,ternery opertor, variables but not if else for loops etc and comment like this*/}
-        <p>Age: {age}</p>
+        <h1 style={  //text-decocation becomes textDecoratino in JSX because no - in object
+          {
+            color: 'blue',
+            boxShadow: '0 2px 5px #ccc'
+          }
+        }>Name: {fname}</h1> {/*inside {} we can use javascript things which return stuff like map,ternery opertor, variables but not if else for loops etc and comment like this*/}
+        <p classname="age">Age: {age}</p>
         <p>Country: {country()}</p>
         {box}
-        {o.name}
-      </header>
+        <div>{o.name}</div> 
     </div>
   );
 }
