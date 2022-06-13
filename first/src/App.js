@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 
@@ -25,20 +25,55 @@ function App() {
     color: 'grey',
     margin: '10px'
   }
+
+  const blog =[
+    {
+      title: 'One',
+      description: 'Hello guys welcome to my blog'
+    },
+    {
+      title: 'Two',
+      description: 'Hello guys welcome to my blog'
+    },
+    {
+      title: 'Three',
+      description: 'Hello guys welcome to my blog'
+    }
+  ]
+  const bm = blog.map((item,pos)=>{
+    return(
+      <div className='card' key={pos}>
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+    </div>
+    )
+  })
   return (
     <div className="App">
+        
         <h1 style={  //text-decocation becomes textDecoratino in JSX because no - in object
           {
             color: 'blue',
             boxShadow: '0 2px 5px #ccc'
           }
         }>Name: {fname}</h1> {/*inside {} we can use javascript things which return stuff like map,ternery opertor, variables but not if else for loops etc and comment like this*/}
-        <p classname="age" style={style}>Age: {age}</p>
+        <p className="age" style={style}>Age: {age}</p>
         <p style={style}>Country: {country()}</p>
         {box}
         <div>{o.name}</div> 
+        <div className='blog'>
+          {/*A key is a unique identifier. In React, it is used to identify which items have changed, updated, or deleted from the Lists. It is useful when we dynamically created components or when the users alter the lists. It is given to outermost element */}
+          {bm}
+        </div>
     </div>
   );
 }
 
 export default App;
+
+
+/*
+tip:
+use external css over inline, cleaner and works like original css
+use classes over ids due to reusability of react components
+*/
