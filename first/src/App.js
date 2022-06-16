@@ -1,5 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import Card from './blog'
 
 
 //we don't need to write the JSX, we can write the Js code also like React.createlement etc because while compiling JSX gets converted to Js only (see /babeljs.io) but JSX is simpler
@@ -9,6 +11,7 @@ import './App.css';
 //we can also create custom components
 
 function App() {
+  //console.log(card)
   const o = {
     name: "Sumant Chaudhary",
     age: 19,
@@ -26,7 +29,7 @@ function App() {
     margin: '10px'
   }
 
-  const blog =[
+  const blogs =[
     {
       id: 1,
       title: 'One',
@@ -43,12 +46,13 @@ function App() {
       description: 'Hello guys welcome to my blog'
     }
   ]
-  const bm = blog.map((item,pos)=>{
+  const bm = blogs.map((item,pos)=>{
     return(
-      <div className='card' key={item.id}>
-      <h3>{item.title}</h3>
-      <p>{item.description}</p>
-    </div>
+      <Card key={pos} /> //always start the name with capital letter
+      // <div className='card' key={item.id}>
+      // <h3>{item.title}</h3>
+      // <p>{item.description}</p>
+      // </div>
     )
   })
   return (
