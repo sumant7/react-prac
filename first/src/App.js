@@ -16,7 +16,7 @@ function App() {
     name: "Sumant Chaudhary",
     age: 19,
   }
-    const fname = "Sumant Chaudhary"  //if we don't use const here it doesn't compile don't know why
+    const fname = "Sumant Chaudhary"  //if we don't use const/let here it doesn't compile 
     const age = 19 
     const p = "Enter Data"
   //inside the return we have JSX which lookd like HTML
@@ -48,7 +48,7 @@ function App() {
   ]
   const bm = blogs.map((item,pos)=>{
     return(
-      <Card key={pos} /> //always start the name with capital letter
+      <Card key={pos} title= "Title" n={pos}/> //always start the name with capital letter
       // <div className='card' key={item.id}>
       // <h3>{item.title}</h3>
       // <p>{item.description}</p>

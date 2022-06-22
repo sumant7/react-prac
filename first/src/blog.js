@@ -1,9 +1,9 @@
 import React from 'react';
 
-const card =()=>{
+const card =(props)=>{
     return(
     <div className='card'>
-      <h3>Title</h3>
+      <h3>{props.title +" " + (props.n+1)}</h3>
       <p>Description</p>
       </div>
     )
