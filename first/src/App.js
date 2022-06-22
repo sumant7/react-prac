@@ -48,7 +48,7 @@ function App() {
   ]
   const bm = blogs.map((item,pos)=>{
     return(
-      <Card key={pos} title= "Title" n={pos}/> //always start the name with capital letter
+      <Card key={pos} title= {item.title} description= {item.description}/> //always start the name with capital letter
       // <div className='card' key={item.id}>
       // <h3>{item.title}</h3>
       // <p>{item.description}</p>
