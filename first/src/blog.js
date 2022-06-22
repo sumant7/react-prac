@@ -11,8 +11,12 @@ const card =(props)=>{
 }
 
 card.propTypes = { 
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,  //is always required, won't work if default value is given
   description: PropTypes.string
 }
 
+card.defaultProps = {
+  title: "Title here", //this shows when no value is passed
+  //description: "None"
+}
 export default card;
